@@ -266,3 +266,72 @@ span{
         margin-top: 4rem;
     }
 }
+@media (max-width: 768px) {
+    /* Tablet styles */
+}
+@media (max-width: 480px) {
+    /* Mobile styles */
+}
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 4rem; /* Adjust for mobile */
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .home-content p {
+        font-size: 1.4rem;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.home-img img {
+    width: 100%;
+    max-width: 32vw;
+    height: auto;
+}
+/* Hide the menu toggle on desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Show the menu toggle on mobile screens */
+@media (max-width: 995px) {
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    /* Initially hide the navigation on mobile */
+    .nav-menu {
+        display: none;
+    }
+
+    /* When nav is active, show the menu */
+    .nav-menu.active {
+        display: block;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: #161616;
+        padding: 2rem;
+        width: 200px;
+        border-left: 3px solid #808080;
+        border-bottom-left-radius: 2rem;
+    }
+
+    /* Style the mobile navigation links */
+    .nav-menu a {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+}
+
