@@ -300,14 +300,24 @@ img {
 /* Show the menu toggle on mobile screens */
 @media (max-width: 995px) {
     .menu-toggle {
-        display: block;
-        font-size: 2rem;
-        background: transparent;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-right: 2rem;
-    }
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #808080; /* Changed to grey */
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #808080; /* Changed to grey */
+    transition: 0.3s ease;
+    cursor: pointer;
+    transform: scale3d(1.03);
+    background-color: #808080; /* Changed to grey */
+    color: black;
+    box-shadow: 0 0 25px #808080; /* Changed to grey */
+}
+
+
 
     /* Initially hide the navigation on mobile */
     .nav-menu {
@@ -334,4 +344,6 @@ img {
         font-size: 2rem;
     }
 }
+
+
 
